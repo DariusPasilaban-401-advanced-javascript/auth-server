@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 //connect to mongodb class-11-db, if it doens't exist create then connect to it
 mongoose.connect('mongodb://localhost/class11');
 
-//checks proof of life
+//checks proof of life between server & db
 mongoose.connection.once('open', function(){
   console.log('Connected to mongodb');
 })
